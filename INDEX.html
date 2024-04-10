@@ -9,10 +9,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e6dfdf;
+            background-color: #ffffff;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 1px;
         }
@@ -20,7 +20,7 @@
             background-image: url('portada.png');
             background-size: cover;
             height: 200px;
-            color: #e6dfdf;
+            color: #ffffff;
             text-align: center;
             display: flex;
             align-items: center;
@@ -31,6 +31,7 @@
         }
         .section {
             display: none;
+            text-align: justify;
         }
         .section.active {
             display: block;
@@ -41,14 +42,30 @@
             padding: 10px 20px;
         }
         .tabs {
+            background-color: #364345;
             padding: 10px 20px;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4vh; /* Esto es opcional y centra verticalmente también */
+            color: #ffffff;
+            width: 100%;
         }
+        .pie {
+            background-image: url('portada.png');
+            text-align: center;
+            padding: 1px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #ffffff;
+              }
+          }
     </style>
 </head>
 <body>
 <div class="cover">
-    <h1>Galería de Arte CiberPunk</h1>
+    <h1>CiberArt</h1>
 </div>
 <div class="container">
     <div class="tabs">
@@ -58,29 +75,36 @@
     </div>
     <div id="inicio" class="section active">
         <!-- Contenido de la página de Inicio -->
-        <h2>Bienvenido a nuestra galería de arte</h2>
+        <h2>Bienvenido a nuestra galería de arte Ciberpunk</h2>
         <br>
-        <p> Una nueva perspectiva del arte a través de la mirada del Ciberpunk </p>
+        <p> CiberArt: Donde la Vanguardia Ciberpunk se Encuentra con los Genios del Arte
+        </p>
+         <p> Bienvenidos a CiberArt, donde el pasado se fusiona con el futuro en un intrigante escaparate de arte ciberpunk presentado por artistas antiguos. En esta plataforma única, nos sumergimos en un universo donde las habilidades artísticas de los maestros del pasado se aplican a la estética ciberpunk, creando una experiencia visual verdaderamente innovadora y emocionante.
+        </p>
+        <p>Desde el Renacimiento hasta el Barroco, los grandes artistas del pasado han sido revitalizados en CiberArt para explorar temas de tecnología, distopía y la interacción humana con la era digital. ¿Puedes imaginar las creaciones de Leonardo da Vinci o Caravaggio, pero interpretadas en un contexto ciberpunk? En CiberArt, esto se convierte en una realidad fascinante.
+        </p>
         <!-- ... -->
     </div>
     <div id="galeria" class="section">
         <!-- Contenido de la página de Galería -->
         <h2>Explora nuestras obras de arte</h2>
         <h3> Pablo Picasso </h3>
-        <p>Guernica</p>
+        <p><b>Guernica</b></p>
         <img src="picasso-ciber-punk1.png" alt="Guernica Ciber-punk" width="600" >
         <p>En esta versión ciberpunk de "Guernica", Picasso nos lleva a reflexionar sobre los peligros de un futuro dominado por la tecnología, donde la guerra y la opresión pueden manifestarse de formas aún más insidiosas y deshumanizantes. </p>
         <hr>
         <h3> Vicent Van gogh </h3>
-        <p>La noche estrellada</p>
+        <p><b>La noche estrellada</b></p>
         <img src="van_gogh.png" alt="Guernica Ciber-punk" width="600" >
         <p>En esta reinterpretación ciberpunk de "La Noche Estrellada", van Gogh nos invita a reflexionar sobre el impacto de la tecnología en nuestras vidas y el equilibrio entre la belleza y la oscuridad en un futuro dominado por la realidad digital. </p>
         <hr>
         <h3> Diego Velazquez </h3>
-        <p>Las meninas</p>
+        <p><b>Las meninas</b></p>
         <img src="las_meninas.png" alt="Guernica Ciber-punk" width="600">
-        <p>"Las Meninas" en estilo ciberpunk es una exploración fascinante de la intersección entre la historia y la tecnología, una fusión de lo antiguo y lo nuevo que nos obliga a cuestionar nuestra propia comprensión de la realidad en un mundo cada vez más digitalizado.</p>
+        <p>"Las Meninas" en estilo ciberpunk es una exploración fascinante de la intersección entre la historia y la tecnología, una fusión de lo antiguo y lo nuevo que nos obliga a cuestionar nuestra propia comprensión de la realidad en un mundo cada vez más digitalizado.
+        </p>
         <hr>
+        <br>
         <!-- ... -->
     </div>
     <div id="contacto" class="section">
@@ -91,11 +115,6 @@
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <br>
-                <div class="form-group">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
                 </div>
                 <br>
                 <div class="form-group">
@@ -118,4 +137,7 @@
     }
 </script>
 </body>
+<footer class="pie">
+    © CiberArt 2024 - Todos los derechos reservados
+</footer>
 </html>
