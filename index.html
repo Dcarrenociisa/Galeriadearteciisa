@@ -126,7 +126,86 @@
     width: 100%;
     color: #ffffff;
 }
+/* Estilos para la sección con la ID "galeria" en dispositivos móviles */
+@media screen and (max-width: 600px) {
+    #galeria.section {
+        text-align: center;
     }
+
+    #galeria h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #galeria h3 {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+    #galeria p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    #galeria img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #galeria hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    /* Estilos para el formulario dentro de la sección con la clase "form-container" */
+    #galeria .form-container {
+        margin-top: 30px;
+    }
+
+    #galeria form {
+        text-align: left;
+    }
+
+    #galeria .form-group {
+        margin-bottom: 15px;
+    }
+
+    #galeria .form-group label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    #galeria .form-group input[type="text"],
+    #galeria .form-group input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #galeria .form-group input[type="submit"] {
+        background-color: #364345;
+        color: #ffffff;
+        border: none;
+        padding: 8px 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #galeria .form-group input[type="submit"]:hover {
+        background-color: #293738;
+    }
+}
+
+}
         
 
     </style>
