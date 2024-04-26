@@ -61,6 +61,72 @@
             color: #ffffff;
               }
 
+@media screen and (max-width: 480px) {
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.cover {
+    background-image: url('portada.png');
+    background-size: cover;
+    height: 150px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover h1 {
+    font-size: 36px;
+}
+
+.section {
+    display: none;
+    text-align: justify;
+}
+
+.section.active {
+    display: block;
+}
+
+.tab {
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.tabs {
+    background-color: #364345;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: #ffffff;
+    width: 100%;
+}
+
+.pie {
+    background-image: url('portada.png');
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+}
+    }
         
 
     </style>
